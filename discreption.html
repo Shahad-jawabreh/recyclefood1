@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonrt awesome 6.4-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <!-- bootstrap 5.3 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/discription.css" />
+
+    <title>Recycle food</title>
+ 
+
+
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="logo-img d-flex align-items-center">
+          <img
+            src="assets/img/recycle.png"
+            alt="logo"
+            class="img-fluid w-100"
+          />
+          <span class="ms-3">Recycle<span class="ms-1">food</span></span>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav text-black text-capitalize">
+            <li class="nav-item">
+              <a class="nav-link  px-3" href="index.html"><span class="position-relative">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="process.html"><span class="position-relative">our process</span></a>
+            </li>
+             
+            <li class="nav-item">
+              <a class="nav-link active px-3" aria-current="page" href="product.html"><span class="position-relative">product</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" aria-current="page" href="#"><span class="position-relative">why?</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 getin" aria-current="page" href="contact.html"
+                >Get in touch</a
+              >
+            </li>
+            <li class="d-flex justify-content-center align-items-center">
+              
+              <a  class="position-relative" href="cart.html">
+                <i class="fa-solid fa-cart-shopping ms-3 fs-5 text-black"></i>
+                <span class="quantitiy-count position-absolute top-0 start-100 translate-middle badge rounded-pill main-color-bg text-white">
+                  0
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="product py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-7">
+                  <div class="row">
+                      <div class="col-md-2 col-sm-2">
+                          <div class="images d-flex flex-column justify-content-around h-100 ">
+
+                            <div> <img src="assets/img/animal.ong.jpg" alt="lamp" class="img-fluid active"  onclick="twofuction(this)"/></div>
+                              <div><img src="assets/img/71f6V6fpp9L._SX522_.jpg" alt="lamp" class="img-fluid" onclick="twofuction(this)" /></div>
+                              <div><img src="assets/img/61vqsoy9jJL._SX522_.jpg" alt="lamp" class="img-fluid"  onclick="twofuction(this)"/></div>
+                              <div><img src="assets/img/51vI-qvC2AL._SX522_.jpg" alt="lamp" class="img-fluid"  onclick="twofuction(this)"/></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-10 col-sm-10">
+                        <div class="img"><img src="assets/img/animal.ong.jpg" alt="lamp" class="img-fluid" id="img" /></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-5">
+                <div>
+                <h2 id="name">Cow Manure</h2>
+                <p class="fs-2"><span class="price fs-2">20</span>$</p>
+                <hr/>
+                
+                </div>
+             
+                <div class="d-flex my-3">
+                  <div class="quantity d-flex border">
+                    <i class="fa-solid fa-plus p-2 rounded-1" onclick="plus('#valuee')" id="plus"></i>
+                    <span class="number px-3 d-flex align-items-center" id="valuee">1</span>
+    
+                    <i class="fa-solid fa-minus p-2 rounded-1" onclick="subtract()" id="sub"></i>
+                </div>
+                <div class="add-to-cart mx-2 border secondary-color-bg">
+                  <a href="#" onclick="addtocart()">Add to cart</a>
+                </div>
+                <div class="heart border"><i class="fa-regular fa-heart"></i></div>
+                </div>
+                <div class="w-100 py-3 d-flex justify-content-center align-items-center border"><a href="#" class="text-black">Buy Now</a></div>
+              
+                <div class="lighrSecondary text-center py-4 px-3 my-3">
+                   <img src="assets/img/payment.png" class="img-fluid" alt="">
+                   <p class="fs-5 mt-3">Guaranteed Safe Checkout</p>
+                </div>
+               <div>
+                <ul>
+                  <li class="d-flex">
+                    <i><i class="fa-solid fa-truck me-3"></i></i>
+                    <p class="secondary-color-text">Free worldwide shipping on all orders over $100</p>
+                  </li>
+                  <li class="d-flex">
+                    <i><i class="fa-solid fa-hourglass-half me-3"></i></i>
+                    <p class="secondary-color-text">Delivers in: 3-7 Working Days <span><a href="#" class="text-black"> Shipping & Return</a></span></p>
+                  </li>
+                  <hr/>
+
+
+                </ul>
+               </div>
+              </div>
+              </div>
+      
+          </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <hr class="text-black" />
+        <div class="row justify-content-between py-3">
+          <div class="col-md-6">
+            <a href="#" class="me-3">Privacy Policy</a>
+            <a href="#" class="me-3">Terms of Use</a>
+            <a href="#" class="me-3">Cookies Settings</a>
+          </div>
+          <div class="col-md-6 text-end">
+            <p>© 2022 Food Recycle International Ltd. All right reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/discr.js" ></script>
+  </body>
+</html>

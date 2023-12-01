@@ -1,0 +1,75 @@
+.buyAndSell .nav-pills .nav-link.active{
+    color: black;
+    background-color: var(--main-color);
+
+}
+.nav-link:hover {
+    color: var(--main-color);
+}
+.New-product .nav-link {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+.New-product .nav-pills .nav-link.active{
+color: var(--main-color);
+background-color: white;
+font-weight: 600;
+
+}
+.icon{
+    position: absolute;
+    top: 9px;
+    right: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.cart a {
+    background: white;
+    color: black ;
+    position: absolute;  
+    bottom: 0;
+    font-weight: 500;
+    width: 90%;
+    opacity: 0;
+    transition: .5s;
+}
+ .cart:hover a{
+    background-color: var(--main-color);
+    color: white;
+}
+.box .icon a {
+    color: white;
+}
+.box .icon a:hover {
+    color: black;
+}
+ .box:hover .cart a {
+opacity: 1;
+bottom: 15px;
+}
+ .box:hover .icon {
+    opacity: 1;
+    right: 10px;
+    }
+.buyAndSell .box{
+       padding: 20px;
+      border-top-left-radius: 40px ;
+        border-top-right-radius: 40px;
+        background-color: #eeeff1;
+        transition: .2s;
+}
+    .buyAndSell .box img{
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+
+    }
+.buyAndSell .box:hover{
+    box-shadow: 3px 3px 5px rgba(0,0,0,.7);
+    transform: translateY(-10px);
+}
+.para6{
+    font-size: .7rem;
+    font-weight: bold;
+}

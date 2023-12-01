@@ -1,0 +1,20 @@
+
+.Touch .icons i:hover {
+    color: var(--main-color);
+   }
+   .Touch .information a{
+    color: black !important;
+   }
+   .Touch .information a:hover{
+       color: var(--main-color) !important;
+      }
+      .Touch input[type="submit"]{
+       background: white;
+       padding: 10px 34px;
+       border: 1px solid black;
+      }
+      .Touch input[type="submit"]:hover{
+       background-color: var(--main-color);
+       border-color: var(--main-color);
+       color: white;
+      }

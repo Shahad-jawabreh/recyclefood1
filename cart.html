@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- fonrt awesome 6.4-->
+   <link rel="stylesheet" href="assets/css/all.min.css" />
+
+   <!-- bootstrap 5.3 -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+   <!-- css file -->
+   <link rel="stylesheet" href="assets/css/main.css" />
+
+   <title>Recycle food</title>
+   <style>
+    table, th{
+  border: 1px solid black;
+}
+   </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="logo-img d-flex align-items-center">
+            <img
+              src="assets/img/recycle.png"
+              alt="logo"
+              class="img-fluid w-100"
+            />
+            <span class="ms-3">Recycle<span class="ms-1">food</span></span>
+          </div>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-black text-capitalize">
+              <li class="nav-item">
+                <a class="nav-link  px-3" href="index.html"><span class="position-relative">Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="process.html"><span class="position-relative">our process</span></a>
+              </li>
+               
+              <li class="nav-item">
+                <a class="nav-link active px-3" aria-current="page" href="product.html"><span class="position-relative">product</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" aria-current="page" href="#"><span class="position-relative">why?</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 getin" aria-current="page" href="contact.html"
+                  >Get in touch</a
+                >
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+    </nav>
+   
+    <section>
+      <div class="container py-5">
+        <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-danger" style="width: 0%"></div>
+        </div>
+        <p class="para text-success fs-2">Purchase $100 and get free shipping</p>
+        <table class="w-100 text-center">
+          <thead>
+            <th>
+              name
+            </th>
+            <th>
+              price
+            </th>
+            <th>
+              quantity
+            </th>
+            <th>
+              total
+            </th>
+            <th>
+              delete
+            </th>
+          </thead>
+          <tbody id="tbody">
+          
+          </tbody>
+        </table>
+
+        <button type="button" class="btn btn-success my-3" id="placeorder">Place Order</button>
+
+        <div class="order-form invisible my-3">
+          <form class="w-75">
+            <div class="form-group row mb-3">
+              <label for="inputPhone3" class="col-sm-2 col-form-label">Phone</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputPhone3" placeholder="Phone">
+              </div>
+              
+            </div>
+            
+            <fieldset class="form-group mb-3">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">payment method</legend>
+                <div class="col-sm-10">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Direct bank transfer
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Check payments
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Cash on delivery
+                    </label>
+                  </div>
+              
+                </div>
+              </div>
+            </fieldset>
+ 
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section> 
+
+    <footer>
+        <div class="container">
+          <hr class="text-black" />
+          <div class="row justify-content-between py-3">
+            <div class="col-md-6">
+              <a href="#" class="me-3">Privacy Policy</a>
+              <a href="#" class="me-3">Terms of Use</a>
+              <a href="#" class="me-3">Cookies Settings</a>
+            </div>
+            <div class="col-md-6 text-end">
+              <p>© 2022 Food Recycle International Ltd. All right reserved.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

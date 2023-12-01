@@ -1,0 +1,248 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500;600;700&display=swap');
+/*font-family: 'jost', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* font-family: 'Pacifico', cursive; */
+
+  @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,500;0,600;1,300;1,400;1,500&display=swap');
+  /* font-family: 'Asap Condensed', sans-serif; */
+/* public css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+ul{
+    list-style: none;}
+a{
+    text-decoration: none;
+}
+:root{
+    --main-color : #A8DF8E;
+    --secondry-color : #CEDEBD;
+}
+.main-color{
+    color :#A8DF8E;
+}
+.main-color-bg{
+    background-color :#A8DF8E;
+}
+.secondary-bgg{
+    background-color: #eeeff1
+}
+.color-cell{
+    background-color: #c8e9b8d5;
+}
+/* public css */
+body{
+    font-family: 'jost', sans-serif; 
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    transform: scale(1);
+    transition: .5s;
+}
+h2{
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 55px;
+}
+.logo-img{
+    width: 4%;
+}
+.logo-img span{
+    color: #A8DF8E;
+    font-weight: 600;
+    font-size: 22px;
+}
+.logo-img span span{
+    color: rgb(255, 81, 0);
+}
+p{
+    font-family: 'Dosis', sans-serif; 
+}
+nav{
+    background-color: transparent;
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+nav .nav-link span::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    background-color:black;
+    width: 0;
+    transition: .5s;
+}
+nav .nav-link:hover span::after {
+    width: 100%;
+}
+nav .nav-link:hover span{
+    color: black;
+}
+
+.navbar-nav .nav-link.active span{
+    border-bottom: 1px solid black;
+}
+nav .getin{
+    width: fit-content;
+    border-radius: 25px;
+    background-color: #A8DF8E;
+}
+nav .getin:hover{
+    background-color: #a8df8ebb;
+}
+.img1{
+    background: url(../img/slideshow-eco-fullscreen.jpg);
+    
+    background-position-y : -130px ;
+}
+.img2{
+    background:  linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)) , url(../img/photo-stop-wasting-food.jpg) ;
+    
+    background-position-y : 5px ;
+}
+.img3{
+    background: url(../img/slideshow-eco-fullscreen.jpg);
+}
+header .img1 , .img2 , .img3{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.operation .box{
+    transition: .7s;
+}
+.operation .box:hover{
+    transform: translateY(-15px);
+}
+.diffrant .box img {
+    border: 9px solid white;
+    transition: .7s;
+}
+.diffrant .box img:hover{
+    transform: scale(1.1);
+}
+.diffrant .box h3{
+    background: white;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 40px;
+    position: relative;
+    top: 55px
+}
+
+.carousel-indicators{
+    bottom: 55px;
+}
+.content-header h1{
+    font-size: 90px ;
+}
+.content .checkk{
+    width: 20%;
+}
+.content a{
+    padding: 8px 15px;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+.content a:hover{
+    background-color: rgb(0, 0, 0);
+}
+.content h2{
+    font-size: 50px;
+}
+.global h2{
+    width: fit-content;
+    background-color: white;
+    padding: 11px 25px;
+    
+    
+}
+.global .content-global{
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0,0,0,.7);
+    display: none;
+}
+.content-global .dis {
+    cursor: pointer;
+}
+.global .para{
+    padding: 11px 31px ;
+    border: 1px solid white;
+    border-radius: 44px;
+    margin-right: 17px;
+}
+.home-process{
+    padding-block: 40px;
+}
+.home-process .box{
+ background-color: rgb(247, 247, 248);
+ padding-block: 31px;
+ padding-inline: 10px;
+ border-top-left-radius: 40px ;
+ border-top-right-radius: 40px ;
+ transition: .5s;
+
+}
+.home-process .box:hover{
+    transform: scale(1.09);
+}
+.home-process .box span {
+    margin-top: 15px;
+    padding: 4px 6px;
+    border: 2px solid var(--main-color);
+    border-radius: 100%;
+}
+.contact{
+    background-color:rgb(247, 247, 248) ;
+    padding-block: 50px;
+}
+
+.contact a{
+    border: 1px solid black ;
+
+}
+.load{
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    transition: .7s;
+}
+.loader {
+    height: fit-content;
+    display: inline-block;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--main-color);
+    position: relative;
+  }
+  .loader::before {
+    content: '';  
+    position: absolute;
+    left: 34px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    box-sizing: border-box;
+    animation: rotation 0.6s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
